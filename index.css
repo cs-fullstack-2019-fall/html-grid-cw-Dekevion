@@ -1,0 +1,46 @@
+/**{*/
+/*    border: 1px solid black;*/
+/*}*/
+
+#container{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+    'hed1 hed1'
+    'below-header below-header'
+    'art1 right-side'
+    'foot foot';
+    grid-gap: 5px;
+    margin: 20px;
+}
+
+#hed1{
+    padding: 13px;
+    grid-area: hed1;
+    background-color: slategray;
+}
+
+#below-Header{
+    grid-area: below-header;
+    background-color: aquamarine;
+    padding: 8px;
+    text-decoration: underline;
+}
+
+#art1{
+    grid-area: art1;
+    background-color: slategray;
+    padding: 11px;
+}
+
+#right-side{
+    grid-area: right-side;
+    background-color: slategray;
+}
+
+#foot{
+    grid-area: foot;
+    padding: 12px;
+    background-color: slategray;
+}
